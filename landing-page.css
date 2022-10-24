@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    padding-bottom: 10000px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -65,14 +66,69 @@ h1 {
     font-size: 48px;
 }
 
-p, a {
+.hero-text p, .links a {
     color: #E5E7EB;
     font-size: 18px;
 }
 
-.sign-up {
+.signup-button {
     background-color: #3882F6;
     padding: 8px 30px;
     border: none;
     border-radius: 7px;
+    cursor: pointer;
+}
+
+.middle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.middle-container .middle-title {
+    padding: 10px ;
+}
+
+.member-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+}
+
+.member {
+    /* border-style: solid;
+    border-radius: 5px;
+    border-color: blue; */
+    text-align: center;
+
+}
+
+.portrait {
+    width: 150px;
+}
+
+.quote-container {
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    font-weight: light;
+    font-style: italic;
+    color: #1f2937;
+}
+
+.quote {
+    width: 50%;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.quote-name {
+    padding-left: 500px;
+    margin-top: 0;
+    font-size: 30px;
 }
