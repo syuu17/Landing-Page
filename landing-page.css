@@ -65,13 +65,14 @@ h1 {
     font-size: 18px;
 }
 
-.signup-button,
+.join-button,
 .call-to-action-button button {
     background-color: #3882F6;
     padding: 8px 30px;
     border: none;
     border-radius: 7px;
     cursor: pointer;
+    color: white;
 }
 
 .middle-container {
@@ -88,23 +89,16 @@ h1 {
     padding: 40px;
 }
 
-/* .middle-container .middle-title {
-    padding: 10px ;
-} */
-
 .member-info {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 130px;
+    flex-wrap: wrap;
 }
 
 .member {
-    /* border-style: solid;
-    border-radius: 5px;
-    border-color: blue; */
     text-align: center;
-
 }
 
 .portrait {
@@ -147,11 +141,22 @@ h1 {
 .call-container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 80px;
     background-color: #3882F6;
     width: 50%;
     padding: 30px 10px;
     border-radius: 10px;
+}
+
+.action-text {
+    font-size: 28px;
+    color: white;
+}
+
+.call-to-action-button {
+    display: flex;
+    flex-shrink: 0;
 }
 
 .call-to-action-button button {
@@ -160,6 +165,8 @@ h1 {
     border-color: white;
     color: white;
     font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
 }
 
 .footer {
@@ -168,4 +175,10 @@ h1 {
     color: white;
     font-weight: bold;
     padding: 15px;
+}
+
+
+.member:hover {
+    transform: scale(1.5);
+    transition: transform 0.2s;
 }
